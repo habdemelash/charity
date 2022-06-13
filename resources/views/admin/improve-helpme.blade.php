@@ -35,20 +35,13 @@
                         <textarea class="form-control" name="{{ 'problem_details_' . $locale }}"
                             style="height: 100px;"><?php echo $helpme->{'problem_details_' . $locale}; ?></textarea>
                     </div>
-                    {{-- <div class=" col-md-8 my-1">
-            <label for="short_desc">{{__('home.short_desc').'-'.$value}}</label>
-            <input type="text" class="form-control" name="{{'short_desc_'.$locale}}" value="<?php echo $event->{'short_desc_' . $locale}; ?>" >
-         </div>
-         <div class=" col-md-4 my-1">
-            <label for="location">{{__('home.location').'-'.$value}}</label>
-            <input type="text" class="form-control" name="{{'location_'.$locale}}" value="<?php echo $event->{'location_' . $locale}; ?>">
-         </div> --}}
+                    
                     <hr>
                 @endforeach
             </div>
     </div>
     <div class="text-center mt-2 mb-5">
-        <button type="submit" class="btn btn-success"><i class="bx bxs-plus-circle bx-md">Save</i></button>
+        <button type="submit" class="btn btn-success"><i class="bx bxs-plus-circle"></i>@lang('home.update')</button>
         </form>
     </div>
 @endsection

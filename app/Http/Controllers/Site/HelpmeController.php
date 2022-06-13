@@ -73,6 +73,6 @@ class HelpmeController extends Controller
         }
         return redirect()
             ->back()
-            ->with("message", "Helpme application sent successfully!");
+            ->with("message", __('home.helpme_sent'));
     }
 }

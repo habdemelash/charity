@@ -137,7 +137,7 @@
             </div>
     </div>
     <div class="text-center mt-2 mb-5">
-        <button type="submit" class="btn btn-success"><i class="bx bxs-edit bx-md">{{ __('home.update') }}</i></button>
+        <button type="submit" class="btn btn-success"><i class="bx bxs-edit"></i>{{ __('home.update') }}</button>
         </form>
     </div>
     <script src="{{ asset('admin/other/jquery-3.6.0.min.js') }}"></script>

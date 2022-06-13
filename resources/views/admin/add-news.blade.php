@@ -88,7 +88,7 @@
      </div>
      <div class="text-center mt-2 mb-5">
 
-         <button type="submit" class="btn btn-success"><i class="bx bxs-plus-circle bx-md">Save</i></button>
+         <button type="submit" class="btn btn-success"><i class="bx bxs-plus-circle"></i>@lang('home.save')</button>
          </form>
      </div>
 

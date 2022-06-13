@@ -233,5 +233,6 @@ return [
      'offline'=>'sarara ala ta’uu isaati',
      'number' => 'lakkoofsa',
       'unseen' => "Hin mul'atu",
+      'helpme_sent'=>"Iyyanni Gargaarsa koo milkaa'inaan ergameera!",
     
 ];

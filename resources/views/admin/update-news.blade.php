@@ -38,7 +38,7 @@
             </div>
     </div>
     <div class="text-center mt-2 mb-5">
-        <button type="submit" class="btn btn-success"><i class="bx bxs-plus-circle bx-md">@lang('home.update')</i></button>
+        <button type="submit" class="btn btn-success"><i class="bx bxs-plus-circle"></i>@lang('home.update')</button>
         </form>
     </div>
     </script>

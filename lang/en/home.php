@@ -232,4 +232,5 @@ return [
      'offline'=>'Offline',
      'number'=>'Number',
      'unseen'=>'Unseen',
+     'helpme_sent'=>'Helpme application sent successfully!',
 ];

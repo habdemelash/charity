@@ -111,7 +111,7 @@
     </div>
     <div class="text-center mt-2 mb-5">
         <button type="submit" class="btn btn-success"><i
-                class="bx bxs-plus-circle bx-md">{{ __('home.save') }}</i></button>
+                class="bx bxs-plus-circle"></i>{{ __('home.save') }}</button>
         </form>
     </div>
     <script src="{{ asset('admin/other/jquery-3.6.0.min.js') }}"></script>
