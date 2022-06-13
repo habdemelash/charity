@@ -14,13 +14,13 @@
         <div class="col-md-7" id="users" style="height: 300px;">
             <strong class="text-center text-primary">@lang('home.users')</strong>
         </div>
-        <div class="col-md-4" id="news" style="height: 300px;">
+        <div class="col-md-12" id="news" style="height: 300px;">
             <strong class="text-center text-primary">@lang('home.news')</strong>
         </div>
         
-          <div id="container" class="col-md-6" style="height:400px;"></div>
+         
           <hr>
-          <div id="helpmes" style="width:100%; height:400px;"></div>
+          <div id="helpmes" class="col" style="width:100%; height:400px;"></div>
           
     </div>
 @php $pending = \App\Models\Helpme::where('status','Pending')->count();
@@ -49,34 +49,11 @@ $accepted = \App\Models\Helpme::where('status','Accepted')->count();
         const chart3 = new Chartisan({
             el: '#news',
             url: "@chart('news_chart')",
-            hooks: new ChartisanHooks().colors().datasets(['bar'])
+            hooks: new ChartisanHooks().colors().datasets(['line'])
         });
     </script>
    
-      <script>
-        document.addEventListener('DOMContentLoaded', function () {
-        const chart = Highcharts.chart('container', {
-            chart: {
-                type: 'bar'
-            },
-            title: {
-                text: '@lang('home.users')'
-            },
-            xAxis: {
-                categories: ['@lang('home.admin')', '@lang('home.staff')', '@lang('home.volunteer')']
-            },
-            yAxis: {
-                title: {
-                    text: 'ብዛት'
-                }
-            },
-            series: [{
-                name: '@lang('home.users')',
-                data: [{{$admins}}, {{$staff}}, {{$volunteers}}]
-            }]
-        });
-    });
-      </script>
+ 
       <script>
         document.addEventListener('DOMContentLoaded', function () {
         const chart = Highcharts.chart('helpmes', {
