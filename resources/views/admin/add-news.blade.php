@@ -30,7 +30,7 @@
                          <label for="heading-{{ $locale }}"
                              class="text-primary">@lang('home.heading')-{{ strtoupper($value) }}</label>
                          <input type="text" id="heading-{{ $locale }}" class="form-control"
-                             name="<?php echo 'heading_' . $locale; ?>" value="{{ old('heading_' . $locale) }}">
+                             name="<?php echo strtolower(__('home.heading')) . $locale; ?>" value="{{ old('heading_' . $locale) }}">
 
                      </div>
 
