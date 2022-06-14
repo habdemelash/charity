@@ -91,6 +91,11 @@
                             <input type="file" class="form-control-lg inner" onchange="fetch()" class="  form-control-lg"
                                 name="document[]" id="document" placeholder="@lang('home.your_legal_docs')*">
                             <span class="namer"> </span>
+
+                            
+           
+           
+           
                         </div>
                         <div class="form-group mt-3 clone hide" style="display: none;">
                             <div class="realprocode">
@@ -99,6 +104,8 @@
                                         placeholder="@lang('home.your_legal_docs')*">
                                     <a class="btn btn-danger" type="button">@lang('home.remove')</a>
                                 </div>
+                                
+                           
                             </div>
                         </div>
                         <div class="form-group mt-3">
@@ -117,9 +124,14 @@
     <script src="{{ asset('admin/other/toastr.min.js') }}"></script>
     <script type="text/javascript">
         $(document).ready(function() {
+            var id = 0;
             $(".btn-success").click(function() {
                 var lsthtml = $(".clone").html();
+               
+                
                 $(".increment").after(lsthtml);
+                var input = document.getElementById("file-name");
+               
             });
             $("body").on("click", ".btn-danger", function() {
                 $(this).parents(".realprocode").remove();
