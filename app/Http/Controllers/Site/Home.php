@@ -19,7 +19,20 @@ use Illuminate\Support\Facades\Session;
 use Illuminate\Support\Facades\DB;
 
 class Home extends Controller
-{
+{   public function subscribe()
+    {
+        $me = Auth::user();
+        $me->subscribed = 1;
+        $me->update();
+        return redirect()->back()->with('message',__('home.subscribed'));
+    }
+    public function unsubscribe()
+    {
+        $me = Auth::user();
+        $me->subscribed = 0;
+        $me->update();
+        return redirect()->back()->with('message',__('home.unsubscribed'));
+    }
     public static function localizer()
     {
         $lang = DB::table("users")

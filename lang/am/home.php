@@ -234,6 +234,11 @@ return [
      'number'=>'ብዛት',
      'unseen'=>'ያልታየ',
      'helpme_sent'=>'የእርዱኝ ማመልከቻው በተሳካ ሁኔታ ተልኳል!',
+     'subscribe'=>'ለመረጃዎቻችን ይመዝገቡ',
+     'subscribed'=>'ለመረጃዎቻችን ተመዝግበዋል',
+     'unsubscribe'=>'መረጃዎቻችን ከመቀበል ይሰረዙ',
+     'unsubscribed'=>'ተሰርዘዋል።',
+
     
 ];
  

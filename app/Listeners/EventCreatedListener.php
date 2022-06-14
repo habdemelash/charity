@@ -29,7 +29,7 @@ class EventCreatedListener
      */
     public function handle(EventCreated $event)
     {
-     $users = User::all();
+     $users = User::where('subscribed',1)->get();
     $content = '';
     
      foreach($users as $user){

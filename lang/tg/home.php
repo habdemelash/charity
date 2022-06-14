@@ -237,4 +237,8 @@ return [
       'number' => 'መጠን',
       'unseen' => 'ዘይተራእየ',
       'helpme_sent'=>'ናይ ሓገዝ መመልከቲይ ብዓወት ተላኢኹ!',
+      'subscribe'=>'ንሓበሬታና ተመዝገቡ',
+      'subscribed'=>'ተመዝጊብኩም ኣለኹም',
+      'unsubscribe'=>'ሓበሬታ ካብ ምቕባል ምቁራጽ',
+      'unsubscribed'=>'ተደምሲሱ',
 ];

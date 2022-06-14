@@ -1,4 +1,5 @@
 @extends('layouts.site', ['myevents' => $myevents])
+<link rel="stylesheet" type="text/css" href="{{ asset('admin/other/toastr.min.css') }}">
 @section('search')
     <div class="container-fluid">
         <form class="d-flex" action="{{ route('site.home.searchnews') }}" method="GET">
@@ -110,4 +111,10 @@
         </section>
     </div>
     <script src="{{ asset('admin/other/jquery-3.6.0.min.js') }}"></script>
+    <script src="{{ asset('admin/other/toastr.min.js') }}"></script>
+    @if (Session::has('message'))
+        <script type="text/javascript">
+            toastr.success("{{ Session::get('message') }}");
+        </script>
+    @endif
 @endsection

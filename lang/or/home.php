@@ -234,5 +234,9 @@ return [
      'number' => 'lakkoofsa',
       'unseen' => "Hin mul'atu",
       'helpme_sent'=>"Iyyanni Gargaarsa koo milkaa'inaan ergameera!",
+      'subscribe'=>"Odeeffannoo keenyaaf galmaa'aa",
+      'subscribed'=>"Galmaa'amtaniittu",
+      'unsubscribe'=>"Odeeffannoo fudhachuu irraa haquu",
+      'unsubscribed'=>"Ati haqamtee jirta",
     
 ];

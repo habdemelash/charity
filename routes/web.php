@@ -36,6 +36,8 @@ Route::group(['middleware' => ['auth']],  function () {
     Route::post('mail/reply', [Messages::class, 'reply'])->name('mail.reply');
     Route::get('dash/mails', [Messages::class, 'chat'])->name('user.mails');
     Route::get('dash/mails/open/{id}', [Messages::class, 'open'])->name('user.mails.open');
+    Route::get('subscribe', [Home::class, 'subscribe'])->name('subscribe');
+    Route::get('unsubscribe', [Home::class, 'unsubscribe'])->name('unsubscribe');
 
 });
 
@@ -87,6 +89,7 @@ Route::middleware([
 Route::get('try', function () {
     $admins = Role::find(3)->users->count();
     dd($admins);
+
 });
 
 

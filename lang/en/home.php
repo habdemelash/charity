@@ -233,4 +233,8 @@ return [
      'number'=>'Number',
      'unseen'=>'Unseen',
      'helpme_sent'=>'Helpme application sent successfully!',
+     'subscribe'=>'Subscribe for news',
+     'subscribed'=>'You have subscribed for news.',
+     'unsubscribe'=>'Unsubscribe from news',
+     'unsubscribed'=>'You have unsubscribed.',
 ];

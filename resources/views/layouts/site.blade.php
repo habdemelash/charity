@@ -272,13 +272,21 @@
                         </p>
                     </div>
                 </div>
-                
                 <div class="social-links">
                     <a target="_blank" href="https://twitter.com/yalenin" class="twitter"><i class="bx bxl-twitter"></i></a>
                     <a  target="_blank" href="https://facebook.com/yalenin" class="facebook"><i class="bx bxl-facebook"></i></a>
                     <a  target="_blank" href="https://instagram.com/yalenin" class="instagram"><i class="bx bxl-instagram"></i></a>
                     <a  target="_blank" href="https://plus.google.com" class="google-plus"><i class="bx bxl-skype"></i></a>
                     <a  target="_blank" href="https://linkedin.com" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+                </div>
+                <div class="mt-4">
+                    @php $me = Auth::user(); @endphp
+                    @if($me->subscribed == 0)
+                    <a href="{{route('subscribe')}}" class="btn btn-primary">@lang('home.subscribe')</a>
+                    @else
+                    <a href="{{route('unsubscribe')}}" class="btn btn-primary">@lang('home.unsubscribe')</a>
+                    @endif
+
                 </div>
             </div>
         </div>
@@ -312,7 +320,6 @@
     </script>
     <script src="{{ asset('admin/other/jquery-3.6.0.min.js') }}"></script>
     <script src="{{ asset('admin/other/bootstrap.bundle.min.js') }}"></script>
-
     @livewireScripts
 </body>
 
